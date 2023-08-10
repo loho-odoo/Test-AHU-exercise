@@ -2,11 +2,11 @@
     'name': 'Real Estate',
     'version': '1.0',
     'summary': 'Manage our real estate',
-    'description': "",
+    'description': "Staging real estate",
     'depends': [
         'base_setup',
     ],
     'installable': True,
     'application': True,
-    'auto_install': False
+    'auto_install': True,
 }
