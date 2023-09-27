@@ -4,7 +4,7 @@
         <record id="test_model_action" model="ir.actions.act_window">
             <field name="name">Ouverture</field>
             <field name="res_model">ouverture_model</field>
-            <field name="view_model">tree,form</field>
+            <field name="view_mode">tree,form</field>
         </record>
     </data>
 </odoo>
