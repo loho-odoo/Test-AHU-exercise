@@ -7,7 +7,8 @@
         'base_setup',
     ],
     'data':[
-        'security/ir.model.access.csv'
+        'security/ir.model.access.csv',
+        'views/estate_propert_views.xml'
     ],
     'installable': True,
     'application': True,
