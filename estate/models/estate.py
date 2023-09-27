@@ -11,7 +11,7 @@ class Estate(models.Model):
 
 
     date_availability = fields.Date(default=lamba self: fields.Datetime.today() + relativedelta(months=3), copy=False)
-    active = fields.Boolean(default=TRUE)
+    active = fields.Boolean(default=True)
     state = fields.Selection(
             selection=[
                 ('new','New')
@@ -20,4 +20,3 @@ class Estate(models.Model):
                 ('cancel','Cancel')
             ],
         string="Status", readonly=True, copy=False, tracking=3, default='new')
-    )
