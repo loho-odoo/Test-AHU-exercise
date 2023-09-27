@@ -8,7 +8,7 @@
         </record>
             <menuitem id="test_menu_root" name="Estate">
                 <menuitem id="test_first_level_menu" name="First Level">
-                    <menuitem id="test_model_menu_action" action="Ouverture"/>
+                    <menuitem id="test_model_menu_action" action="test_model_action"/>
                 </menuitem>
             </menuitem>
     </data>
