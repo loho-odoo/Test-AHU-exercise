@@ -14,9 +14,9 @@ class Estate(models.Model):
     active = fields.Boolean(default=True)
     state = fields.Selection(
             selection=[
-                ('new','New')
-                ('ongoing','Ongoing')
-                ('done','Done')
-                ('cancel','Cancel')
+                ('new','New'),
+                ('ongoing','Ongoing'),
+                ('done','Done'),
+                ('cancel','Cancel'),
             ],
         string="Status", readonly=True, copy=False, tracking=3, default='new')
