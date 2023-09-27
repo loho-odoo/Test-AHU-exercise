@@ -10,13 +10,13 @@ class Estate(models.Model):
     number_of_bedrooms=fields.Integer(default=2)
 
 
-    date_availability = fields.Date(default=lamba self: fields.Datetime.today() + relativedelta(months=3), copy=False)
+    date_availability = fields.Date(default=lambda self: fields.Datetime.today() + relativedelta(months=3), copy=False)
     active = fields.Boolean(default=True)
     state = fields.Selection(
-            selection=[
-                ('new','New'),
-                ('ongoing','Ongoing'),
-                ('done','Done'),
-                ('cancel','Cancel'),
-            ],
+        selection=[
+            ('new','New'),
+            ('ongoing','Ongoing'),
+            ('done','Done'),
+            ('cancel','Cancel'),
+        ],
         string="Status", readonly=True, copy=False, tracking=3, default='new')
